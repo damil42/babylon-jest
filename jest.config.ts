@@ -1,9 +1,7 @@
 import { JestConfigWithTsJest } from 'ts-jest';
 
 export default {
-  preset: 'ts-jest',
+  preset: "ts-jest/presets/default-esm",
+  extensionsToTreatAsEsm: [".ts"],
   testEnvironment: 'jsdom',
-  // transformIgnorePatterns: [
-  //   "/node_modules/(?!@babylonjs/core)/"
-  // ],
 } as JestConfigWithTsJest;
